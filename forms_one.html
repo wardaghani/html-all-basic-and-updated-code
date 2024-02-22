@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture 3</title>
+    <style>
+        body
+{
+    background-color: rgb(48, 48, 48);
+    color: beige;
+}
+    </style>
+</head>
+<body>
+ <h1>Forms in HtML</h1> 
+ <!---------- send pic and text in form then use enctype="multipart/form-data"--> 
+ <!---------- send pic and text in form then use enctype=""--> 
+ <form action="url" method="get" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data">
+    <!--------label tags used for name------------>
+    <label for="fname">First Name</label>
+    <!--------input tags for text------->
+    <input type="text" placeholder="first name" name="" id="fname">
+    <label for="lname">Last Name</label>
+    <input type="text" placeholder="last name" name="" id="lname">
+    <button type="submit">submit</button>
+ </form> 
+</body>
+</html>

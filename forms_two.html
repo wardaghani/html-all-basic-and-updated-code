@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture 4</title>
+    <style>
+        body
+{
+    background-color: rgb(48, 48, 48);
+    color: beige;
+}
+    </style>
+</head>
+<body>
+    <h1>Forms in HtML</h1> 
+    <!----------------form tag ----------->
+<form action="url" method="get" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data">
+     <!-------input for text--------->
+     FIRST NAME
+     <input type="text" placeholder="first name" name="" id="fname">
+     <!----------------  <br>bracket tag   ----------------->
+     <br>
+    <!-------input for password write in dots--------->
+    PASSWORD
+    <input type="password" name="" id="">
+    <br>
+    <!-------input for week in choosing board--------->
+    CHOOSE WEEK
+    <input type="week" name="" id="">
+    <br>
+     <!-------input for date and time in choosing board--------->
+     DATE AND TIME
+     <input type="datetime-local" name="" id="date and time">
+     <br>
+     <!----------chosing for one option in easy way -->
+     SELECT EDITOR
+     <select name="editors" id="">
+        <option value="vscode">vscode</option>
+        <option value="notepad">notepad</option>
+        <option value="notepad++">notepad++</option>
+        <option value="dreamweaver">dreamweaver</option>
+     </select>
+     <br>
+      <!----------chosing for one option in difficult  way -->
+      choose editors
+      <input list="editors" name="editors">
+      <datalist id="editors">
+   <option value="vscode">vscode</option>
+   <option value="dreamweaver">dreamweaver</option>
+   <option value="notepad">notepad</option>
+   <option value="notepad++">notepad++</option>
+      </datalist>
+      <br>
+        <!------- user not see this feild only see server this token--------->
+  <input type="hidden" name="">
+    <br>
+      <!------- range selected --------->
+      VOLUME
+      <input type="range" name="" id="volume" min="0" max="11">
+      <br>
+        <!------- radio buttion select only one option--------->
+        GENDER
+        <input type="radio" name="gender" value="male">MALE
+        <input type="radio" name="gender" value="female">FEMALE
+    <br>
+    <!-----------checkbox select two or more option------->
+    HOBBIES
+    <input type="checkbox" name="hob1" value="books">BOOOKS
+    <input type="checkbox" name="hob1" value="storybooks">STORY BOOOKS
+    <input type="checkbox" name="hob1" value="NOVELS">NOVELS
+    <br>
+     <!------- for reset all forms value--------->
+    <input type="reset">
+    <br>
+     <!----------submit button----------->
+       <button type="submit">submit</button>
+    </form> 
+</body>
+</html>
